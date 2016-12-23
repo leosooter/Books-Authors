@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Books and Authors</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="static/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="current_authors">
+      <h3>Current Authors</h3>
+      <ul id="authors">
+
+      </ul>
+    </div>
+
+    <form class="add_author add_form" action="/authors/new" method="post">
+      <h4>Add a new Author</h4>
+      <input type="text" name="firstName" placeholder="First Name" value="">
+      <input type="text" name="lastName" placeholder="Last Name" value="">
+      <input type="submit" value="Add Author">
+    </form>
+
+    <form class="add_book add_form" action="/books" method="post">
+      <h4>Add a new Book</h4>
+      <input type="text" name="title" placeholder="Title" value="">
+      <!-- <input type="date" name="publishDate" placeholder="Published Date" value=""> -->
+      <label for="author">Author</label>
+      <select id="select_author" name="author">
+      </select>
+      <input type="submit" value="Add Book">
+    </form>
+  </body>
+</html>

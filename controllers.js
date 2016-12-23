@@ -24,6 +24,8 @@ var AuthorsController = {
 
 var BooksController = {
     create : function(req, res){
+        console.log("Creating new book");
+        console.log("Form = ", req.body);
         var newBook;
 
         Book.create(req.body)

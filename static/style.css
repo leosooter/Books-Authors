@@ -1,0 +1,52 @@
+body{
+  padding: 40px;
+}
+#current_authors{
+  height: 400px;
+  width: 600px;
+  overflow: scroll;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid rgb(143, 154, 180);
+}
+.add_form{
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  /*min-height: 200px;*/
+  margin-right: 30px;
+  margin-bottom: 50px;
+  border: 1px solid rgb(171, 181, 203);
+}
+form input{
+  display: block;
+  margin: 10px;
+}
+label{
+  display: block;
+  margin: 10px;
+}
+select{
+  min-width: 100px;
+  margin-left: 10px;
+}
+
+.author{
+  list-style: none;
+  border: 1px solid rgb(171, 181, 203);
+}
+
+.delete_author{
+  display: inline;
+  border: none;
+  height: 30px;
+  margin-left: -20px;
+}
+
+.hide{
+  display: none;
+}
+
+button{
+  display: inline;
+}
